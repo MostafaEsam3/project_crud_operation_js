@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+
+    
+</head>
+<body>
+   
+
+    <h1 class="text-muted" id="title">My Crud Operation</h1>
+
+    <div class="w-75 mx-auto my-1 ">
+         
+        <div class="form-group">
+            <label for="productName">productName</label>
+            <input class="my-2 form-control" type="text" name="" id="productName">
+             <small class="text-muted">productName must be chars only</small>
+        </div>
+
+        <div class="form-group my-2">
+            <label for="productPrice">productPrice</label>
+            <input class="my-2 form-control" type="number" name="" id="productPrice">
+             <small class="text-muted">productPrice must be number only</small>
+        </div>
+
+
+        <div class="form-group my-2">
+            <label for="productCategory">productCategory</label>
+            <input class="my-2 form-control" type="text" name="" id="productCategory">
+             <small class="text-muted">productCategory must be chars only</small>
+        </div>
+
+
+        <div class="form-group my-2">
+            <label for="productDescription">productDescription</label>
+            <textarea class="my-2 form-control" type="text" name="" id="productDescription"></textarea>
+             <small class="text-muted">productDescription must be chars only</small>
+        </div>
+        
+        <button id="addProduct" onclick="addProduct()" class=" my-3 btn btn-outline-info">addProduct</button>
+
+    </div>
+
+    <div class="w-75 mx-auto mt-4">
+        <label class="my-0.5 " for="search">Search by Product Name</label>
+
+            <input onkeyup="searchProduct(this.value)" class="my-2 form-control" type="text" name="" id="search">
+    </div>
+
+     <div class="w-75 mx-auto my-5">
+
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>delete</th>
+            </thead>
+
+            <tbody id="tableBody"> 
+                
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
